@@ -92,7 +92,7 @@ input, select, textarea {
 }
 
 svg {
-	width: 100px;
+	width: 75px;
 }
 
 /* .img-div {
@@ -256,7 +256,7 @@ svg {
 	}
 
 	p {
-		margin: 0 0 5px 0;
+		margin: 0 0 7px 0;
 	}
 
 		p.content {
@@ -2873,10 +2873,12 @@ svg {
 /* Features */
 
 	.features {
-		display: -moz-flex;
+		/* display: -moz-flex;
 		display: -webkit-flex;
-		display: -ms-flex;
-		display: flex;
+		display: -ms-flex; */
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		/* display: flex;
 		-moz-flex-wrap: wrap;
 		-webkit-flex-wrap: wrap;
 		-ms-flex-wrap: wrap;
@@ -2884,19 +2886,25 @@ svg {
 		-moz-justify-content: center;
 		-webkit-justify-content: center;
 		-ms-justify-content: center;
-		justify-content: center;
+		justify-content: center; */
 		/* width: calc(100% + 2em); */
 		/* margin: 0 0 3em -2em; */
 		padding: 0;
 		list-style: none;
-		width: 100%;
+		/* width: 100%; */
+		width: 76%;
+		margin: 0 auto;
 	}
 
 		.features li {
-			width: calc(33.33333% - 4em);
+			/* width: calc(33.33333% - 4em); */
 			/* margin-left: 2em; */
 			margin-top: 1em;
 			padding: 0 7px;
+			display: flex;
+			flex-direction: column;
+			/* justify-content: center; */
+			align-items: center;
 		}
 
 			.features li:nth-child(1), .features li:nth-child(2), .features li:nth-child(3) {
@@ -2922,7 +2930,7 @@ svg {
 		@media screen and (max-width: 736px) {
 
 			.features {
-				/* width: 100%; */
+				width: 100%;
 				margin: 0 0 2em 0;
 			}
 
@@ -3687,7 +3695,7 @@ svg {
 		@media screen and (max-width: 1280px) {
 
 			#main > .main {
-				padding: 4em 4em 2em 4em ;
+				padding: 4em 4em 4em 4em ;
 			}
 
 				#main > .main > .image.main:first-child {
@@ -3786,6 +3794,20 @@ svg {
 			text-align: center;
 		}
 
+		@media screen and (max-width: 2000px) {
+			#footer {
+				padding: 4em 4em 2em 4em ;
+			}
+			#footer > * {
+				width: 100%;
+				margin-left: 0;
+				/* margin-bottom: 3em; */
+				display: flex;
+flex-direction: column;
+align-items: center;
+			}
+		}
+
 		@media screen and (max-width: 1280px) {
 
 			#footer {
@@ -3855,6 +3877,7 @@ align-items: center;
 	#wrapper {
 		width: 64em;
 		max-width: calc(100% - 4em);
+		min-width: 427px;
 		margin: 0 auto;
 	}
 
