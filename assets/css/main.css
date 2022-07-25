@@ -91,6 +91,10 @@ input, select, textarea {
 	font-weight: 600;
 }
 
+svg {
+	width: 100px;
+}
+
 /* .img-div {
 	width: 100%;
 } */
@@ -252,7 +256,7 @@ input, select, textarea {
 	}
 
 	p {
-		margin: 0 0 2em 0;
+		margin: 0 0 5px 0;
 	}
 
 		p.content {
@@ -2889,9 +2893,9 @@ input, select, textarea {
 	}
 
 		.features li {
-			width: calc(33.33333% - 2em);
+			width: calc(33.33333% - 4em);
 			/* margin-left: 2em; */
-			margin-top: 3em;
+			margin-top: 1em;
 			padding: 0 7px;
 		}
 
@@ -2910,7 +2914,7 @@ input, select, textarea {
 			}
 
 				.features li:nth-child(3) {
-					margin-top: 3em;
+					margin-top: 1em;
 				}
 
 		}
@@ -2925,11 +2929,11 @@ input, select, textarea {
 				.features li {
 					/* width: 100%; */
 					margin-left: 0;
-					margin-top: 2em;
+					margin-top: 1em;
 				}
 
 					.features li:nth-child(2), .features li:nth-child(3) {
-						margin-top: 2em;
+						margin-top: 1em;
 					}
 
 		}
