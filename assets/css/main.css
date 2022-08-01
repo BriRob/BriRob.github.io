@@ -99,9 +99,14 @@ input, select, textarea {
 	transform: scale(1.1);
 }
 
-.each-proj div {
+/* .each-proj div {
 	font-size: 25px;
 	font-weight: 600;
+} */
+.projName{
+	font-size: 25px;
+	font-weight: 600;
+	margin-bottom: 5px;
 }
 
 svg {
@@ -111,6 +116,25 @@ svg {
 .all-proj {
 	display: flex;
 	flex-wrap: wrap;
+}
+
+.techStack {
+	width: 65%;
+	margin: 5px auto;
+	font-size: 13px;
+	font-style: italic;
+	font-weight: 100;
+}
+
+.projDesc {
+	font-size: 14px;
+	font-weight: 600;
+	width: 85%;
+	margin: 5px auto 2px;
+}
+
+.ghProj {
+	font-size: 40px;
 }
 
 
@@ -192,6 +216,7 @@ svg {
 			.each-proj {
 				display: flex;
 				flex-direction: column;
+				justify-content: space-between;
 				width: 50%;
 				padding: 10px;
 			}
@@ -199,7 +224,7 @@ svg {
 			.each-proj img {
 				width: 100%;
 			    /* width: 371px; */
-    height: 266px;
+    height: 336px;
     object-fit: fill;
 			}
 
@@ -214,7 +239,15 @@ svg {
 			body, input, select, textarea {
 				font-size: 12pt;
 			}
+			.each-proj img {
+    height: 275px;
+			}
 
+		}
+		@media screen and (max-width: 900px) {
+			.each-proj img {
+    height: 250px;
+			}
 		}
 
 		@media screen and (max-width: 675px) {
@@ -229,7 +262,7 @@ svg {
 			.each-proj img {
 				width: 100%;
 				min-width: 270px;
-				height: 280px;
+				height: 250px;
 			}
 		}
 
