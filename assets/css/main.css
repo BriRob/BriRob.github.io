@@ -74,15 +74,28 @@ input, select, textarea {
 
 .each-proj img {
 	border-radius: 5px;
-	/* height: 300px; */
+	height: 300px;
 	/* transition: .3s; */
 }
 
 .each-proj {
-	transition: .3s;
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	padding: 10px;
+	/* transition: .3s; */
 }
 
-.each-proj:hover {
+.each-proj a {
+	transition: .3s;
+
+}
+
+/* .each-proj:hover {
+	transform: scale(1.1);
+} */
+
+.each-proj a:hover {
 	transform: scale(1.1);
 }
 
@@ -95,7 +108,13 @@ svg {
 	width: 75px;
 }
 
-/* .img-div {
+.all-proj {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+/* .img-div img {
 	width: 100%;
 } */
 
